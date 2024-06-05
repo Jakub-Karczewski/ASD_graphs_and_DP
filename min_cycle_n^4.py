@@ -1,8 +1,6 @@
 n = int(input())
 m = int(input())
 M, vis = [[-1 for _ in range(n)] for _ in range(n)], [[0 for _ in range(n)] for _ in range(n)]
-second, chuj = [[float('inf') for _ in range(n)] for _ in range(n)], [[float('inf') for _ in range(n)] for _ in
-                                                                      range(n)]
 T = [[[float('inf') for _ in range(n)] for _ in range(n)] for _ in range(n)]
 pom = [0] * n
 for i in range(n): M[i][i] = 0
