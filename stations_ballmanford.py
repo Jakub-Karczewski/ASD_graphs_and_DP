@@ -1,4 +1,3 @@
-#from WIET import syndrom_sztokholmski
 import collections
 def wypisz(T):
     for i in range(len(T)):
