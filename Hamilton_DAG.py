@@ -30,7 +30,7 @@ for i in range(n):
 DFS(i)
 sorted = sorted[::-1]
 #print(sorted)
-chuj = 0
+found = 0
 for i in range(n-1):
     x = sorted[i]
     flag = 0
@@ -39,8 +39,8 @@ for i in range(n-1):
             flag = 1
             break
     if(not flag):
-        chuj = 1
+        found = 1
         print("Nie ma drogi Hamiltona")
-if(not chuj):
+if(not found):
     print("Jest droga Hamiltona")
 #print(time)
