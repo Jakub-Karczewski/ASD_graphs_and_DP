@@ -1,4 +1,3 @@
-#from WIET import jebaćdziekana
 n = int(input())
 m = int(input())
 edge = []
