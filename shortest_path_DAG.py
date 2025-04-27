@@ -26,11 +26,11 @@ sorted = sorted[::-1]
 print(sorted)
 dist[0] = 0
 for i in range(n):
-    chuj = sorted[i]
-    if(dist[chuj] == float('inf')):
+    v = sorted[i]
+    if(dist[v] == float('inf')):
         continue
-    for j in range(len(T[chuj])):
-        boy, val = T[chuj][j]
-        if(dist[chuj] + val < dist[boy]):
-            dist[boy] = dist[chuj] + val
+    for j in range(len(T[v])):
+        v2, val = T[pos][j]
+        if(dist[v] + val < dist[v2]):
+            dist[v2] = dist[v] + val
 print(dist)
