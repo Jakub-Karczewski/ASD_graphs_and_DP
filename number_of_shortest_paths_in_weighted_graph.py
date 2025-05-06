@@ -2,7 +2,6 @@ n = int(input())
 m = int(input())
 T, vis = [[-1 for _ in range(n)] for _ in range(n)], [[0 for _ in range(n)] for _ in range(n)]
 #T to bedzie graf skierowany wazony w reprezentacji macierzowej
-#vis[i][j] służy do tego, aby przy relaksacji krawedzi nie wejsc kilkukrotnie do wierzcholka i z tego samego parenta j
 act = [1] * n
 for i in range(m):
     a = int(input())
